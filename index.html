@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>DOM Interaction</title>
-    <script src="app.js" defer></script>
-  </head>
-  <body>
-    <h1>Testing DOM Exercise !!!</h1>
-    <body>  
-      <ol>
-        <li>
-          <h5>getElementById() - </h5>In JavaScript, the getElementById() is a built-in function that allows you to select an HTML element using its unique ID attribute.
-          <h5>SYNTAX - document.getElementById(elementID);  </h5> 
-          <p id="demo">JavaScript DOM</p>  
-          <button onclick="changeColor('purple');">purple</button>  
-        </li>
-        <li>
-          <h5>getElementsByName() - </h5>In JavaScript, the getElementsByName() method returns a collection of elements with a specified name.
-          <h5>SYNTAX - document.getElementsByName(elementName);</h5>
-          Phone:  
-   <input name="devices" type ="checkbox" value="Phone">  
-   Laptop:  
-   <input name="devices" type ="checkbox" value="Laptop">  
-   Sofa:  
-   <input name="furnitures" type ="checkbox" value="Sofa">  
-   <p>Check the checkboxes that have name = "devices"</p>   
-        </li>
-        <li>
-          <h5>getElementsByClassName() - </h5>In JavaScript, the getElementsByClassName() returns a collection of elements with a specified class.
-          <h5>SYNTAX - document.getElementByClassName(classname);</h5>
-          <p class="highlight">This is paragraph 1.</p>  
-  <p class="highlight">This is paragraph 2.</p>  
-  <p>This is a normal paragraph.</p>  
-  <button onclick="highlightParagraphs()">Highlight Paragraphs</button>
-        </li>
-      </ol> 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>DOM Interaction</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>Testing DOM Exercise !!!</h1>
+  <ol>
+    <li>
+      <h5>getElementById() -</h5>
+      In JavaScript, the getElementById() is a built-in function that allows
+      you to select an HTML element using its unique ID attribute.
+      <h5>SYNTAX - document.getElementById(elementID);</h5>
+      <p id="demo">JavaScript DOM</p>
+      <button onclick="changeColor('purple');">purple</button>
+    </li>
+    <li>
+      <h5>getElementsByName() -</h5>
+      In JavaScript, the getElementsByName() method returns a collection of
+      elements with a specified name.
+      <h5>SYNTAX - document.getElementsByName(elementName);</h5>
+      Phone:
+      <input name="devices" type="checkbox" value="Phone" />
+      Laptop:
+      <input name="devices" type="checkbox" value="Laptop" />
+      Sofa:
+      <input name="furnitures" type="checkbox" value="Sofa" />
+      <p>Check the checkboxes that have name = "devices"</p>
+    </li>
+    <li>
+      <h5>getElementsByClassName() -</h5>
+      In JavaScript, the getElementsByClassName() returns a collection of
+      elements with a specified class.
+      <h5>SYNTAX - document.getElementByClassName(classname);</h5>
+      <p class="highlight">This is paragraph 1.</p>
+      <p class="highlight">This is paragraph 2.</p>
+      <p>This is a normal paragraph.</p>
+      <button onclick="highlightParagraphs()">Highlight Paragraphs</button>
+    </li>
+    <li>
+      <h5>getElementsByTagName() -</h5>
+      In JavaScript, the getElementsByTagName() is a built-in method that
+      returns all the elements having the given tag name.
+      <h5>SYNTAX - getElementsByTagName(tagName)</h5>
+      <p>This is a paragraph</p>
+      <p>
+        Here we are going to count a total number of paragraphs by the
+        getElementByTagName() method.
+      </p>
+      <p>Let's see the simple example</p>
+
+      <button onclick="countpara()">count paragraph</button>
+    </li>
+  </ol>
+</body>
 </html>
