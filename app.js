@@ -29,3 +29,8 @@ button.addEventListener("click", () => {
   const paragraph = document.querySelector("#myParagraph");
   paragraph.textContent = "The text has been changed!";
 });
+
+ const elements = document.querySelectorAll(".highlight");
+ elements.forEach((element) => {
+   element.style.color = "red";
+ });
