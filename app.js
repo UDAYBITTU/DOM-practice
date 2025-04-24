@@ -23,3 +23,9 @@ function countpara() {
   var totalpara = document.getElementsByTagName("p");
   alert("total p tags are: " + totalpara.length);
 }
+
+const button = document.querySelector("#myButton");
+button.addEventListener("click", () => {
+  const paragraph = document.querySelector("#myParagraph");
+  paragraph.textContent = "The text has been changed!";
+});
