@@ -42,9 +42,12 @@ redButton.addEventListener('click', changeTextColor);
 
 function changeTextColor() {
   const p = document.getElementById('welcome');
-  if (p.className === "text-default")
+  if (p.className === "text-default") {
     p.className = "my-new-class";
-  else
-  p.className = "text-default";
+    p.textContent = "color changed to new color";
+  } else {
+    p.className = "text-default";
+    p.textContent = "color changed to default";
+  }
 }
 //************************************************************************************************ */
