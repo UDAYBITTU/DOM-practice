@@ -34,3 +34,17 @@ button.addEventListener("click", () => {
  elements.forEach((element) => {
    element.style.color = "red";
  });
+
+
+//************************************************************************************************ */
+const redButton = document.getElementById("redButton");
+redButton.addEventListener('click', changeTextColor);
+
+function changeTextColor() {
+  const p = document.getElementById('welcome');
+  if (p.className === "text-default")
+    p.className = "my-new-class";
+  else
+  p.className = "text-default";
+}
+//************************************************************************************************ */
